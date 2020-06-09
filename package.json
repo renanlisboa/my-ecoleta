@@ -1,0 +1,20 @@
+{
+  "name": "my-ecoleta",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanlisboa/my-ecoleta.git"
+  },
+  "keywords": [],
+  "author": "Renan Lisboa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renanlisboa/my-ecoleta/issues"
+  },
+  "homepage": "https://github.com/renanlisboa/my-ecoleta#readme"
+}
