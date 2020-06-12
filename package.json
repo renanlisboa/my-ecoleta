@@ -2,9 +2,9 @@
   "name": "my-ecoleta",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/renanlisboa/my-ecoleta/issues"
   },
-  "homepage": "https://github.com/renanlisboa/my-ecoleta#readme"
+  "homepage": "https://github.com/renanlisboa/my-ecoleta#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
