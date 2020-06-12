@@ -1,0 +1,92 @@
+#bg-image {
+  background: url(../assets/home-background.svg) no-repeat;
+  height: 125vh;
+  background-position: 37vw 20vh;
+}
+
+#homepage {
+  width: 90%;
+  height: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#homepage header {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#homepage header a {
+  display: flex;
+  font-weight: bold;
+}
+
+#homepage header span {
+  background: url(../assets/log-in.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-right: 16px;
+}
+
+#homepage main {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+#homepage main h1 {
+  font-size: 54px;
+}
+
+#homepage main p {
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 24px;
+}
+
+#homepage main a {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  transition: 400ms;
+}
+
+#homepage main a:hover {
+  background-color: #2fb86e;
+}
+
+#homepage main span {
+  width: 72px;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#homepage main span::after {
+  content: '';
+  background: url(../assets/search.svg);
+  width: 20px;
+  height: 20px;
+}
+
+#homepage main strong {
+  color: white;
+  flex: 1;
+  text-align: center;
+}
