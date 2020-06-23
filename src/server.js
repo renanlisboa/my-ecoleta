@@ -19,5 +19,9 @@ server.get('/', (req, res) => {
   return res.render('index.html')
 })
 
+server.get('/create-point', (req, res) => {
+  return res.render('create-point.html')
+})
+
 // Turning Server On
-server.listen(3000)
+server.listen(3333)
