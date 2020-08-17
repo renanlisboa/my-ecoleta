@@ -1,46 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecoleta</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu:wght@700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/home.css">
-</head>
-<body>
-  <div id="bg-image">
-    <div id="homepage">
-      <header>
-        <img src="/assets/logo.svg" alt="Logo">
-        <a href="#"><span></span> Cadastre um ponto de coleta</a>
-      </header>
-      <main>
-        <h1>Seu marketplace de coleta de resíduos</h1>
-        <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
-        <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
-      </main>
-    </div>
-  </div>
-  <!-- Modal Index Page -->
-  <div id="modal" class="hide">
-    <div class="content">
-      <div class="header">
-        <h1>Pontos de Coleta</h1>
-        <a href="#">Fechar</a>
-      </div>
-      <form action="">
-        <label for="">Cidade</label>
-        <div class="search-field">
-          <input type="text" name="search" placeholder="Pesquisar por cidade">
-          <button>
-            <img src="/assets/search.svg" alt="Buscar">
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- Modal Script -->
-  <script src="/scripts/index.js"></script>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% set pageId = 'bg-image' %}
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/home.css">
+<link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+<div id="homepage">
+  <header>
+    <img src="/assets/logo.svg" alt="logo">
+    <a href="/create-point"><span></span>Cadastre um ponto de coleta</a>
+  </header>
+
+  <main>
+    <h1>Seu marketplace de coleta de resíduos</h1>
+    <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
+    <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
+  </main>
+</div>
+{% endblock content %}
+
+{% block modal %}
+{% include 'partials/modal.html' %}
+{% endblock modal %}
+
+{% block scripts %}
+<script src="/scripts/index.js"></script>
+{% endblock scripts %}

@@ -1,0 +1,118 @@
+/* Responsive Layout for Different Devices */
+
+/* Devices with 1366px width and above */
+@media (min-width: 1366px) {
+  #bg-image {
+    height: 100vh;
+    background-position-x: 42vw;
+  }
+}
+/* Devices with width up to 1024px */
+@media (max-width: 1024px) {
+  /* Background Image */
+  #bg-image {
+    height: 100vh;
+    background-position: 80vw;
+  }
+  /* Page Content Box */
+  #homepage {
+    align-items: center;
+    text-align: center;
+  }
+  /* Header */
+  #homepage header a {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+  }
+  /* Main Section */
+  #homepage main {
+    align-items: center;
+  }
+
+  #search-results-page main .cards {
+    grid-template-columns: 1fr;
+  }
+
+  #create-point-page form .field-group {
+    flex-direction: column
+  }
+
+  #create-point-page form .field-group .field + .field {
+    margin-left: 0;
+  }
+}
+/* Devices with width up to 375px */
+@media (max-width: 375px) {
+  #homepage header a {
+    bottom: 30px;
+  }
+
+  #homepage header a {
+    font-size: 14px;
+    width: 225px;
+  }
+
+  #homepage main h1 {
+    font-size: 36px;
+  }
+  
+  #homepage main p {
+    font-size: 20px;
+  }
+  
+  #homepage main a {
+    height: 60px;
+    border-radius: 5px;
+  }
+
+  #homepage main a span {
+    width: 60px;
+    height: 60px;
+  }
+
+  #search-results-page header {
+    flex-direction: column;
+  }
+
+  #search-results-page header img {
+    height: 250px;
+  }
+
+  #search-results-page header img span {
+    margin-right: 0;
+  }
+}
+/* Devices with height up to 425px */
+@media (max-height: 425px) {
+  #homepage header {
+    margin: 25px 0 15px 0;
+  }
+
+  #homepage header a {
+    width: 242px;
+    bottom: 15px;
+  }
+
+  #homepage main h1 {
+    font-size: 26px;
+  }
+
+  #homepage main p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  #homepage main a {
+    margin-top: 15px;
+    height: 42px;
+    border-radius: 5px;
+  }
+
+  #homepage main a span {
+    width: 42px;
+    height: 42px;
+  }
+}

@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
   --title-color: #322153;
-  --primary-color: #34cb79;
+  --primary-color: #34cb79
 }
 
 * {
@@ -22,5 +22,5 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Ubuntu, sans-serif;
-  color: var(--title-color);
+  color: var(-title-color);
 }
